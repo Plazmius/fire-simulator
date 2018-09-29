@@ -1,6 +1,24 @@
-$mdc-theme-primary: #363636;
-$mdc-theme-secondary: #363636;
-$mdc-theme-on-primary: #f3f2f3;
-$mdc-theme-on-secondary: #f3f2f3;
-@import "~@material/react-button/index";
+$field-box-size: 50px;
 
+*{
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+.field-row {
+    height: $field-box-size;
+    margin: 1px;
+    .field-cell {
+        margin: 1px;
+        display: inline-block;
+        width: $field-box-size;
+        height: $field-box-size;
+
+        &.empty {
+            background: #f3f2f3;
+        }
+
+        &.fire {
+            background: red;
+        }
+    }
+}
